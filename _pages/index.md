@@ -48,7 +48,7 @@ sidenav:
       </button>
     </dt>
     <dd id="home-register-checklist" class="usa-accordion__content" hidden>
-      <ul class="usa-list list-style-checkbox">
+      <ul class="usa-list">
         <li>Inter-agency agreement application name</li>
         <li>Public-face, friendly application name</li>
         <li>Implementation protocols (SAML or Open ID Connect)</li>
