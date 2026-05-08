@@ -51,6 +51,11 @@ Make sure you have the following items ready before you start the deployment pro
 
 -   You must include an agency logo for your application. [Learn more about our logo guidelines.](/user-experience/agency-logo/)
 
+- A public certificate that adheres to these industry standard best practices:
+  - Expiration date of one year or less
+  - Positive serial number at least 16 characters in length
+  - Signed by a trusted Certificate Authority
+
 Depending on your agency’s integration additional items may be needed:
 
 - **If this is a SAML integration (not OpenID Connect), then please ensure that:**
@@ -62,11 +67,6 @@ Depending on your agency’s integration additional items may be needed:
         -   If you are using a service which does not support SAML encryption, then please submit a technical support ticket through the [Partner Support Help Desk](https://zendesk.login.gov) for further guidance.
 
 - **If this is an integration requesting identity proofed attributes, you must include a Failure to Proof URL.** Users will be redirected to this URL if they fail to complete the identity verification process. This page should communicate your agency and/or departments alternate methods of accessing your application.
-
-- A public certificate that adheres to these industry standard best practices:
-  - Expiration date of one year or less
-  - Positive serial number at least 16 characters in length
-  - Signed by a trusted Certificate Authority
 
 If you have questions after reviewing this page, submit a technical support ticket through the [Partner Support Help Desk]({{ site.baseurl}}/support/#contacting-partner-support). You will need a [Login.gov production account](https://secure.login.gov) to submit technical support tickets. Your Login.gov production account and Login.gov sandbox (test environment) accounts are separate.
 
