@@ -51,8 +51,8 @@ Make sure you have the following items ready before you start the deployment pro
 
 -   You must include an agency logo for your application. [Learn more about our logo guidelines.](/user-experience/agency-logo/)
 
-- A public certificate that adheres to these industry standard best practices:
-  - Expiration date of one year or less
+- A public certificate that adheres to these standard best practices:
+  - Expiration date of 1 to 3 years depending on use and risk factors (see [NIST 800-57 Part 1 Rev. 5](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r5.pdf)). We recommend 1 year or less to be on the safe side.
   - Positive serial number at least 16 characters in length
   - Signed by a trusted Certificate Authority
 
