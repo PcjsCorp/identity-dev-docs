@@ -60,7 +60,7 @@ You are able to test authentication methods in real time with a testing account 
 
 If you chose to integrate your app using the OIDC private_key_jwt protocol, you will need to create a private key that will be used to sign your request to our token endpoint, and a corresponding public certificate that you will upload to your app in the Partner Portal. Login.gov will use your public certificate to verify the signature in your request.
 
-More details on how to create this public/private keypair are available in the [Creating a public certificate](https://developers.login.gov/testing/#creating-a-public-certificate) section of our Testing documentation.
+More details on how to create this public/private keypair are available in the [Creating a public certificate](/testing/#creating-a-public-certificate) section of our Testing documentation.
 
 
 ### Auto-discovery

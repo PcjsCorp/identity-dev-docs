@@ -24,6 +24,8 @@ sidenav:
 Login.gov's public key, used to verify signed JWTs (such as the `id_token`), is available in [JWK](https://tools.ietf.org/html/rfc7517){:class="usa-link--external"} format at the `/api/openid_connect/certs` endpoint.
 
 This public key is rotated periodically (on at least an annual basis). It is important to assume the `/api/openid_connect/certs` endpoint could contain multiple JWKs when rotating application signing keys. Be sure to use the JWK endpoint dynamically through [auto-discovery](/oidc/getting-started/#auto-discovery) rather than hardcoding the public key. This ensures that your application will not require manual intervention when the Login.gov public key is rotated.
+
+For your own public/private keypair used to sign your JWT, please refer to the  [Creating a public certificate](/testing/#creating-a-public-certificate) section of our Testing documentation.
 {% endcapture %}
 
 <div class="grid-row grid-gap">
@@ -31,11 +33,5 @@ This public key is rotated periodically (on at least an annual basis). It is imp
     {{ content | markdownify }}
      <a href="{{ '/oidc/logout/' | prepend: site.baseurl }}" class="usa-link margin-top-4 mobile:display-none desktop:display-block">Next step: Logout</a>
   </div>
-    <div class="usa-layout-docs__main code-snippet-column desktop:grid-col-4">
-      <section id="pkce" class="code-snippet-section">
-        <span class="code-button code-button__selected margin-left-2">OpenSSL Command</span>
-          {% include snippets/oidc/certificates.md %}
-      </section>
-    </div>
-      <a href="{{ '/oidc/logout/' | prepend: site.baseurl }}" class="usa-link mobile:display-block desktop:display-none margin-top-2">Next step: Logout</a>
+    <a href="{{ '/oidc/logout/' | prepend: site.baseurl }}" class="usa-link mobile:display-block desktop:display-none margin-top-2">Next step: Logout</a>
 </div>
