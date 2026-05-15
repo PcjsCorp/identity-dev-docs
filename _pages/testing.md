@@ -73,7 +73,7 @@ Login.gov does not manage user accounts. If you have lost access to a team:
 
 ### Creating a public certificate
 
-You can use the following OpenSSL command to generate a self-signed 2048-bit PEM-encoded public certificate for your testing/sandbox application (with a 1-year validity period). Self-signed certificates should be for testing/sandbox purposes only. **For security reasons, we highly recommend using Certificate Authority (CA) issued certificates for your production integration.**
+You can use the following OpenSSL command to generate a self-signed 2048-bit PEM-encoded public certificate for your testing/sandbox application (with a 1-year validity period).
 
 ```
 openssl req -nodes -x509 -days 365 -newkey rsa:2048 -keyout private.pem -out public.crt
